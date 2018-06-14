@@ -1,0 +1,52 @@
+.header {
+  padding: .8em;
+  width: 100vw;
+  background: #9013fe;
+  display: flex;
+  .logo {
+    font-size: 2em;
+    color: white;
+    padding: 1em;
+  }
+  .search {
+    margin: auto;
+    .box {
+      display: flex;
+      min-width: 40vw;
+      padding-bottom: .6em;
+      border-bottom: 1px solid white;
+      .icon {
+        color: white;
+        font-size: 1.3em;
+        margin-right: .8em;
+      }
+      .input {
+        font-size: 1.3em;
+        outline: none;
+        background: inherit;
+        color: white;
+        border: none;
+        &::-webkit-input-placeholder {
+          color: #ebebeb;
+          font-weight: lighter;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+.article-grid {
+  display: flex;
+  .side-section {
+    flex: 2;
+    padding: 2em 2em;
+    background: #F2F2F2;
+    min-height: 90vh;
+  }
+  .main-section {
+    flex: 8;
+    padding: 2em 2em;
+    background: #F2F2F2;
+  }
+}

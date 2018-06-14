@@ -1,28 +1,44 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
+import { FilterComponent } from './filter/filter.component';
+import { CardComponent } from './card/card.component';
+import { ChipComponent } from './chip/chip.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { DateComponent } from './date/date.component';
+
+const routes: Routes = [
+
+  { path: 'search', component: SearchComponent }
+
+];
 
 @NgModule({
   exports: [],
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    FilterComponent,
+    CardComponent,
+    ChipComponent,
+    CheckboxComponent,
+    DropdownComponent,
+    DateComponent
   ],
 
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forChild([
-      { path: '/search', component: SearchComponent }
-    ]),
-  ]
+    RouterModule.forRoot(routes),
+
+  ],
+  bootstrap: [AppComponent]
 
 })
-export class _Module {
+export class AppModule {
 
 }
