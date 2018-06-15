@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  .pic {
+    height: 200px;
+    width: 200px;
+    background: black;
+  }
+  .content {
+    background: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #793EEB;
+      margin-bottom: .5em;
+    }
+    .context {
+      margin-bottom: .5em;
+    }
+    .detail {
+      display: flex;
+      margin-bottom: .5em;
+      .author {
+        font-weight: bold;
+        margin-right: .5em;
+      }
+      .tag {
+        padding: 0 1em;
+        background: #D7D7D7;
+        color: white;
+        border-radius: 25px;
+      }
+    }
+    .info {
+      display: flex;
+      .location,
+      .date {
+        color: #B0B0B0;
+        margin-right: .5em;
+      }
+    }
+  }
+}

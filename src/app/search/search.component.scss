@@ -1,0 +1,14 @@
+.result-text {
+  font-size: 1.5em;
+  &:last-child {
+    margin-bottom: 1em;
+  }
+}
+
+.chip-container {
+  margin-top: .8em;
+}
+
+.list {
+  padding: 1em 0;
+}

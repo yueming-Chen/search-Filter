@@ -1,0 +1,13 @@
+.chips {
+  display: flex;
+  .chip {
+    border: 1px solid #793EEB;
+    color: #793EEB;
+    padding: .5em 1.5em;
+    margin: .3em .8em;
+    border-radius: 50px;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+}

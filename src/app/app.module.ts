@@ -10,6 +10,7 @@ import { ChipComponent } from './chip/chip.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { DateComponent } from './date/date.component';
+import { ColourPipe } from './colour.pipe';
 
 const routes: Routes = [
 
@@ -27,7 +28,8 @@ const routes: Routes = [
     ChipComponent,
     CheckboxComponent,
     DropdownComponent,
-    DateComponent
+    DateComponent,
+    ColourPipe
   ],
 
   imports: [

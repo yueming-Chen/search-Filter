@@ -1,24 +1,12 @@
 <div class="search-result">
-  <p>Showing 15 result by...</p>
-  <div class="chips">
-    <div class="chip">Koashing</div>
-    <div class="chip">entertainment</div>
+  <span class="result-text">Showing </span>
+  <span class="result-text" style="color:#793EEB">{{(resultsCount||'15 ')}}</span>
+  <span class="result-text"> result by...</span>
+  <div class="chip-container">
+    <app-chip></app-chip>
   </div>
+
 </div>
 <div class="list">
-  <div class="card">
-    <div class="pic"></div>
-    <div class="content">
-      <div class="title"></div>
-      <div class="context"></div>
-      <div class="detail">
-        <div class="author"></div>
-        <div class="tag"></div>
-      </div>
-      <div class="info">
-        <div class="location"></div>
-        <div class="date"></div>
-      </div>
-    </div>
-  </div>
+  <app-card></app-card>
 </div>
