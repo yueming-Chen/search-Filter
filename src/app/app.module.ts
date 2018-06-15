@@ -14,7 +14,8 @@ import { ColourPipe } from './colour.pipe';
 
 const routes: Routes = [
 
-  { path: 'search', component: SearchComponent }
+  { path: 'search', component: SearchComponent },
+  { path: '', redirectTo: '/search', pathMatch: 'full' },
 
 ];
 
